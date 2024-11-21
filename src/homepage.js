@@ -11,10 +11,10 @@ append the children elements of div with id content
         </p>
     </div>
 */
-export {appendToHomePage};
+export {loadHomePage};
 const content = document.getElementById('content');
 
-function appendToHomePage () {
+function loadHomePage () {
     const restaurantName = document.createElement('h1');
     restaurantName.textContent = "Topper's Filipino Bistro"
     const summary = document.createElement('p');
