@@ -17,11 +17,13 @@ const content = document.getElementById('content');
 function loadHomePage () {
     const restaurantName = document.createElement('h1');
     restaurantName.textContent = "Topper's Filipino Bistro"
+    restaurantName.classList.add('title');
     const summary = document.createElement('p');
     summary.appendChild(document.createTextNode("Mabuhay! Welcome to Topper's Filipino Bistro where we serve the best Filipino cuisine and hospitality this side of the world!"));
     summary.appendChild(document.createElement('br'));
     summary.appendChild(document.createElement('br'));
     summary.appendChild(document.createTextNode("Whether if this is your first time trying Filipino food or you're just looking for a taste of the motherland...then this is the place for you!"));
+    summary.classList.add('summary');
     content.appendChild(restaurantName);
     content.appendChild(summary);
 }

@@ -1,7 +1,7 @@
 import "./styles.css";
 import { loadHomePage } from "./homepage";
 
-loadHomePage();
+// loadHomePage();
 
 const content = document.getElementById('content');
 const homeButton  = document.getElementById('home');
