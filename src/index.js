@@ -1,7 +1,8 @@
 import "./styles.css";
 import { loadHomePage } from "./homepage";
+import { menu } from "./menu";
 
-// loadHomePage();
+loadHomePage();
 
 const content = document.getElementById('content');
 const homeButton  = document.getElementById('home');
@@ -19,6 +20,7 @@ menuButton.addEventListener('click', () => {
     while (content.firstChild) {
         content.removeChild(content.firstChild);
     }
+    menu();
 });
 
 contactButton.addEventListener('click', () => {
