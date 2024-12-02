@@ -1,6 +1,7 @@
 import "./styles.css";
 import { loadHomePage } from "./homepage";
 import { menu } from "./menu";
+import { loadContactsPage } from "./contact";
 
 loadHomePage();
 
@@ -27,4 +28,5 @@ contactButton.addEventListener('click', () => {
     while (content.firstChild) {
         content.removeChild(content.firstChild);
     }
+    loadContactsPage();
 });
